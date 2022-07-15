@@ -1,20 +1,40 @@
 {
-  "name": "my-vue-app",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "vue": "^3.2.37"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-vue": "^3.0.0",
-    "typescript": "^4.6.4",
-    "vite": "^3.0.0",
-    "vue-tsc": "^0.38.4"
-  }
+    "name": "my-vue-app",
+    "lib": "https://juejin.cn/post/7036745610954801166#heading-7",
+    "private": true,
+    "version": "0.0.0",
+    "scripts": {
+        "dev": "vite",
+        "build": "vue-tsc --noEmit && vite build",
+        "preview": "vite preview",
+        "lint": "eslint src --fix --ext .ts,.tsx,.vue,.js,.jsx",
+        "prettier": "prettier --write ."
+    },
+    "dependencies": {
+        "axios": "^0.27.2",
+        "nprogress": "^0.2.0",
+        "vue": "^3.2.37",
+        "vue-router": "^4.1.2"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.12.16",
+        "@babel/eslint-parser": "^7.12.16",
+        "@types/nprogress": "^0.2.0",
+        "@typescript-eslint/eslint-plugin": "^5.30.6",
+        "@typescript-eslint/parser": "^5.30.6",
+        "@vitejs/plugin-vue": "^3.0.0",
+        "babel-plugin-add-module-exports": "^1.0.4",
+        "eslint": "^7.32.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-prettier": "^4.0.0",
+        "eslint-plugin-vue": "^8.0.3",
+        "naive-ui": "^2.31.0",
+        "prettier": "^2.4.1",
+        "sass": "^1.32.7",
+        "sass-loader": "^12.0.0",
+        "typescript": "^4.6.4",
+        "vite": "^3.0.0",
+        "vite-plugin-compression": "^0.5.1",
+        "vue-tsc": "^0.38.4"
+    }
 }
