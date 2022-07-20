@@ -9,7 +9,7 @@ const routes: Array<RouteRecordRaw> = [
             keepAlive: true,
             requireAuth: false
         },
-        component: () => import('@/pages/login.vue')
+        component: () => import('@/pages/test/login.vue')
     },
     {
         path: '/',
@@ -29,7 +29,7 @@ const routes: Array<RouteRecordRaw> = [
             keepAlive: true,
             requireAuth: true
         },
-        component: () => import('@/pages/vueUse.vue')
+        component: () => import('@/pages/test/vueUse.vue')
     },
     {
         path: '/request',
@@ -39,7 +39,7 @@ const routes: Array<RouteRecordRaw> = [
             keepAlive: true,
             requireAuth: true
         },
-        component: () => import('@/pages/request.vue')
+        component: () => import('@/pages/test/request.vue')
     }
 ];
 
