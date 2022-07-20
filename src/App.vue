@@ -1,14 +1,12 @@
 <template>
+    <pageHeader />
     <RouterView />
 </template>
 
-<style>
-    #app {
-        font-family: Avenir, Helvetica, Arial, sans-serif;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        text-align: center;
-        color: #2c3e50;
-        margin-top: 60px;
-    }
+<script lang="ts" setup>
+    import pageHeader from '@/pages/layout/pageHeader.vue';
+</script>
+<style lang="scss">
+    // https://www.ui8.net/?rel=tmtt 素材库
+    @import '@/assets/scss/index.scss';
 </style>

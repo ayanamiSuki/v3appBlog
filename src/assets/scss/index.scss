@@ -1,0 +1,29 @@
+@import './common/variables.scss';
+@import './common//reset.scss';
+@import './common/global.scss';
+@import './common//flex-layout.scss';
+body {
+    background: url(@/assets/imgs/bg.jpg) left center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+}
+#app {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    &::before {
+        content: '';
+        z-index: -1;
+        background: inherit;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        box-shadow: inset 0 0 0 3000px rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(60px);
+    }
+}

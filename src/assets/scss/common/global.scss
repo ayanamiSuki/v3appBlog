@@ -1,0 +1,123 @@
+$directions: (
+    't': 'top',
+    'b': 'bottom',
+    'l': 'left',
+    'r': 'right'
+);
+
+$dimensions: (
+    'p': 'padding',
+    'm': 'margin'
+);
+
+@each $dim in $dimensions {
+    @each $dir in $directions {
+        @for $i from 1 through 5 {
+            $size: $i * 5;
+            .#{nth($dim,1)}-#{nth($dir,1)}-#{$size} {
+                #{nth($dim,2)}-#{nth($dir,2)}: #{$size}px;
+            }
+        }
+    }
+}
+
+@each $dim in $dimensions {
+    @for $i from 1 through 5 {
+        $size: $i * 5;
+        .#{nth($dim,1)}-#{$size} {
+            #{nth($dim,2)}: #{$size}px #{$size}px #{$size}px #{$size}px;
+        }
+    }
+}
+
+.h-100p {
+    height: 100% !important;
+}
+.w-100p {
+    width: 100% !important;
+}
+.of-h {
+    overflow: hidden !important;
+}
+.pos-rel {
+    position: relative;
+}
+.pos-abs {
+    position: absolute;
+}
+.t-center {
+    text-align: center;
+}
+
+.f-x {
+    font-size: $font-x;
+}
+.f-s {
+    font-size: $font-s;
+}
+.f-m {
+    font-size: $font-m;
+}
+.f-b {
+    font-size: $font-b;
+}
+.f-l {
+    font-size: $font-l;
+}
+
+.f-hs {
+    font-size: $font-hs;
+}
+.f-hm {
+    font-size: $font-hm;
+}
+.f-hb {
+    font-size: $font-hb;
+}
+.f-hl {
+    font-size: $font-hl;
+}
+
+.f-ds {
+    font-size: $font-ds;
+}
+.f-dm {
+    font-size: $font-dm;
+}
+.f-db {
+    font-size: $font-db;
+}
+.f-dl {
+    font-size: $font-dl;
+}
+
+.t-l {
+    text-align: left !important;
+}
+.t-c {
+    text-align: center !important;
+}
+.t-r {
+    text-align: right !important;
+}
+.t-small {
+    color: #bab8b8;
+}
+
+// 字体粗细
+.t-bold {
+    font-weight: bold;
+}
+.t-bolder {
+    font-weight: bolder;
+}
+.t-lighter {
+    font-weight: lighter;
+}
+.pointer {
+    cursor: pointer;
+}
+
+.transparent {
+    background: transparent !important;
+}
